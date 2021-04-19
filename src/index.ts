@@ -1,22 +1,23 @@
 import './styles.scss';
+import ApiManager from './shared/ApiManager';
 
 class App {
-  static instance: any;
+  static _instance: any;
 
   constructor() {
-    this.sayHello();
+    this.load();
   }
 
-  sayHello() {
-    document.write('hello');
+  load() {
+    ApiManager.getInstance();
   }
 
   static getInstace() {
-    if (!this.instance) {
-      this.instance = new App();
+    if (!this._instance) {
+      this._instance = new App();
     }
 
-    return this.instance;
+    return this._instance;
   }
 }
 
