@@ -34,7 +34,8 @@
   "parserOptions": {
     "project": "./tsconfig.json",
     "ecmaVersion": 2020,
-    "sourceType": "module"
+    "sourceType": "module",
+    "createDefaultProgram": true
   },
   "env": {
     "es6": true,

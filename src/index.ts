@@ -1,5 +1,5 @@
 import './styles.scss';
-import ApiManager from './shared/ApiManager';
+import ApiManager from './shared/api-manager';
 
 class App {
   static _instance: any;
