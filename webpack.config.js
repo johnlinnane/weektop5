@@ -33,5 +33,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
     }),
+    new HtmlWebpackPlugin({
+      filename: 'playlist.html',
+      title: 'Playlist',
+      template: 'src/playlist.html',
+    }),
   ],
 };

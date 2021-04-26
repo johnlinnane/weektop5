@@ -1,5 +1,2 @@
-$colour: hsl(0, 0%, 99%);
-
-body {
-  background: $colour;
-}
+@import './styles/reset';
+@import './styles/components';

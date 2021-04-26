@@ -32,10 +32,9 @@
     "prettier" // eslint-plugin-prettier
   ],
   "parserOptions": {
-    "project": "./tsconfig.json",
+    "project": "./weektop5/tsconfig.json",
     "ecmaVersion": 2020,
-    "sourceType": "module",
-    "createDefaultProgram": true
+    "sourceType": "module"
   },
   "env": {
     "es6": true,
@@ -49,7 +48,12 @@
     "no-param-reassign": "off",
     "no-console": "off",
     "no-shadow": "off",
-    "lines-between-class-members": "off",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ],
+    "no-restricted-syntax": 0,
     "class-methods-use-this": "off",
     "no-prototype-builtins": "off",
     "unicorn/prevent-abbreviations": "off",
